@@ -1,0 +1,122 @@
+{
+    "capital": {
+        "name": "capital",
+        "id": "capital",
+        "description": "Should not be shown in list",
+        "terrains": [
+            "field",
+            "forest",
+            "hill",
+            "mountain"
+        ],
+        "buildCost": {},
+        "laborCost": 0
+    },
+    "farm": {
+        "name": "farm",
+        "id": "farm",
+        "description": "Produces food every spring and autumn",
+        "terrains": [
+            "field",
+            "hill"
+        ],
+        "buildCost": {
+            "wood": 3,
+            "food": 5,
+            "stone": 3
+        },
+        "laborCost": 5
+    },
+    "lumbermill": {
+        "name": "lumbermill",
+        "id": "lumbermill",
+        "description": "Regularly produces wood",
+        "terrains": [
+            "forest"
+        ],
+        "buildCost": {
+            "wood": 2,
+            "stone": 3,
+            "horses": 1
+        },
+        "laborCost": 3
+    },
+    "ranch": {
+        "name": "ranch",
+        "id": "ranch",
+        "description": "Produces horses",
+        "terrains": [
+            "field"
+        ],
+        "buildCost": {
+            "wood": 5,
+            "stone": 3,
+            "horses": 1
+        },
+        "laborCost": 2
+    },
+    "lodge": {
+        "name": "lodge",
+        "id": "lodge",
+        "description": "Regularly produces some food and leather",
+        "terrains": [
+            "forest"
+        ],
+        "buildCost": {
+            "wood": 2,
+            "iron": 3,
+            "leather": 2
+        },
+        "laborCost": 3
+    },
+    "mine": {
+        "name": "mine",
+        "id": "mine",
+        "description": "Regularly produces iron",
+        "terrains": [
+            "field",
+            "hill",
+            "mountain"
+        ],
+        "buildCost": {
+            "wood": 5,
+            "stone": 3,
+            "iron": 2
+        },
+        "laborCost": 5
+    },
+    "depot": {
+        "name": "depot",
+        "id": "depot",
+        "description": "Creates a new supply point for provisioning armies",
+        "terrains": [
+            "field",
+            "forest",
+            "hill",
+            "mountain"
+        ],
+        "buildCost": {
+            "stone": 10,
+            "wood": 10,
+            "iron": 10
+        },
+        "laborCost": 15
+    },
+    "fort": {
+        "name": "fort",
+        "id": "fort",
+        "description": "Defends and area and allows training of units",
+        "terrains": [
+            "field",
+            "forest",
+            "hill",
+            "mountain"
+        ],
+        "buildCost": {
+            "stone": 30,
+            "wood": 35,
+            "iron": 20
+        },
+        "laborCost": 20
+    }
+}

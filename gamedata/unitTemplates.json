@@ -1,0 +1,87 @@
+{
+    "militia": {
+        "id": "militia",
+        "name": "Militia",
+        "meleeAttack": 1,
+        "missileAttack": 1,
+        "meleeDefense": 1,
+        "missileDefense": 1,
+        "maxCohesion": 40,
+        "cohesion": 40,
+        "speed": 8,
+        "bulk": 4,
+        "buildCost": {
+            "iron": 1,
+            "wood": 1,
+            "leather": 2
+        },
+        "upkeepCost": {
+            "leather": 1,
+            "food": 1
+        }
+    },
+    "infantry": {
+        "id": "infantry",
+        "name": "Basic Infantry",
+        "meleeAttack": 2,
+        "missileAttack": 2,
+        "meleeDefense": 1,
+        "missileDefense": 1,
+        "maxCohesion": 50,
+        "cohesion": 50,
+        "speed": 8,
+        "bulk": 2,
+        "buildCost": {
+            "iron": 4,
+            "wood": 1
+        },
+        "upkeepCost": {
+            "iron": 2,
+            "food": 1
+        }
+    },
+    "archer": {
+        "id": "archer",
+        "name": "Archers",
+        "meleeAttack": 1,
+        "missileAttack": 1,
+        "meleeDefense": 3,
+        "missileDefense": 1,
+        "maxCohesion": 50,
+        "cohesion": 50,
+        "speed": 8,
+        "bulk": 2,
+        "buildCost": {
+            "wood": 4,
+            "leather": 2
+        },
+        "upkeepCost": {
+            "wood": 2,
+            "leather": 1,
+            "food": 1
+        }
+    },
+    "cavalry": {
+        "id": "cavalry",
+        "name": "Cavalry",
+        "meleeAttack": 3,
+        "missileAttack": 1,
+        "meleeDefense": 1,
+        "missileDefense": 1,
+        "maxCohesion": 50,
+        "cohesion": 50,
+        "speed": 16,
+        "bulk": 2,
+        "buildCost": {
+            "iron": 2,
+            "leather": 2,
+            "horses": 2
+        },
+        "upkeepCost": {
+            "iron": 1,
+            "leather": 1,
+            "horses": 1,
+            "food": 2
+        }
+    }
+}

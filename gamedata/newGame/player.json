@@ -1,0 +1,15 @@
+{
+    "id": "mjm",
+    "name": "Draconis Imperium",
+    "labor": 25,
+    "maxLabor": 50,
+    "spentLabor": 5,
+    "resources": {
+        "iron": 22,
+        "wood": 20,
+        "food": 42,
+        "stone": 18,
+        "leather": 8,
+        "horses": 2
+    }
+}
