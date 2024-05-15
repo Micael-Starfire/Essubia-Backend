@@ -24,7 +24,9 @@ sendMap.get( '/', (req, res) => {
         buildOrders: JSON.parse(buildOrders)
     }
 
+    // Log and send the success
     res.json(gameStatus);
+    console.log("GET game state request processed");
 });
 
 module.exports = sendMap;

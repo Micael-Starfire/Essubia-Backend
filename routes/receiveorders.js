@@ -175,8 +175,9 @@ receiveOrders.post('/', (req, res) => {
         console.log(err);
     });
 
-    //console.log('POST request processed');
-    res.json({ msg: 'POST request processed' });
+    // Log and send the success message
+    console.log('New orders received');
+    res.json({ msg: 'New orders received' });
 });
 
 module.exports = receiveOrders;

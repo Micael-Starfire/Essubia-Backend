@@ -1,1 +1,359 @@
-{"field01":{"id":"field01","name":"Cavalry Force","xPos":8,"yPos":6,"unitList":{"a01":{"id":"a01","name":"Cavalry","meleeAttack":3,"missileAttack":1,"meleeDefense":1,"missileDefense":1,"maxCohesion":50,"cohesion":50,"speed":16,"bulk":2,"buildCost":{"iron":2,"leather":2,"horses":2},"upkeepCost":{"iron":1,"leather":1,"horses":1,"food":2}},"a02":{"id":"a02","name":"Cavalry","meleeAttack":3,"missileAttack":1,"meleeDefense":1,"missileDefense":1,"maxCohesion":50,"cohesion":50,"speed":16,"bulk":2,"buildCost":{"iron":2,"leather":2,"horses":2},"upkeepCost":{"iron":1,"leather":1,"horses":1,"food":2}},"a03":{"id":"a03","name":"Cavalry","meleeAttack":3,"missileAttack":1,"meleeDefense":1,"missileDefense":1,"maxCohesion":50,"cohesion":50,"speed":16,"bulk":2,"buildCost":{"iron":2,"leather":2,"horses":2},"upkeepCost":{"iron":1,"leather":1,"horses":1,"food":2}},"a04":{"id":"a04","name":"Cavalry","meleeAttack":3,"missileAttack":1,"meleeDefense":1,"missileDefense":1,"maxCohesion":50,"cohesion":50,"speed":16,"bulk":2,"buildCost":{"iron":2,"leather":2,"horses":2},"upkeepCost":{"iron":1,"leather":1,"horses":1,"food":2}}},"owner":"mjm","disorder":0,"burden":8,"burdenThreshold":8,"burdenModifier":1,"numUnits":4,"trueSpeed":0,"maxSpeed":16,"avgSpeed":7.625,"generalOrders":{"engagement":"engage"},"waypoints":[{"x":8,"y":6},{"x":10,"y":7}]},"field02":{"id":"field02","name":"Expeditionary Force","xPos":9,"yPos":9,"unitList":{"b01":{"id":"b01","name":"Basic Infantry","meleeAttack":2,"missileAttack":2,"meleeDefense":1,"missileDefense":1,"maxCohesion":50,"cohesion":50,"speed":8,"bulk":2,"buildCost":{"iron":4,"wood":1},"upkeepCost":{"iron":2,"food":1}},"b02":{"id":"b02","name":"Basic Infantry","meleeAttack":2,"missileAttack":2,"meleeDefense":1,"missileDefense":1,"maxCohesion":50,"cohesion":50,"speed":8,"bulk":2,"buildCost":{"iron":4,"wood":1},"upkeepCost":{"iron":2,"food":1}},"b03":{"id":"b03","name":"Archers","meleeAttack":1,"missileAttack":1,"meleeDefense":3,"missileDefense":1,"maxCohesion":50,"cohesion":50,"speed":8,"bulk":2,"buildCost":{"wood":4,"leather":2},"upkeepCost":{"wood":2,"leather":1,"food":1}},"b04":{"id":"b04","name":"Archers","meleeAttack":1,"missileAttack":1,"meleeDefense":3,"missileDefense":1,"maxCohesion":50,"cohesion":50,"speed":8,"bulk":2,"buildCost":{"wood":4,"leather":2},"upkeepCost":{"wood":2,"leather":1,"food":1}},"b05":{"id":"b05","name":"Cavalry","meleeAttack":3,"missileAttack":1,"meleeDefense":1,"missileDefense":1,"maxCohesion":50,"cohesion":50,"speed":16,"bulk":2,"buildCost":{"iron":2,"leather":2,"horses":2},"upkeepCost":{"iron":1,"leather":1,"horses":1,"food":2}}},"owner":"mjm","disorder":0,"burden":10,"burdenThreshold":16,"burdenModifier":2,"numUnits":5,"trueSpeed":0,"maxSpeed":8,"avgSpeed":4.858333333333333,"generalOrders":{"engagement":"ignore"},"waypoints":[{"x":9,"y":9}]},"hostile01":{"id":"hostile01","name":"Cavalry Force","xPos":10,"yPos":7,"unitList":{"h01":{"id":"h01","name":"Basic Infantry","meleeAttack":2,"missileAttack":2,"meleeDefense":1,"missileDefense":1,"maxCohesion":50,"cohesion":50,"speed":8,"bulk":2,"buildCost":{"iron":4,"wood":1},"upkeepCost":{"iron":2,"food":1}},"h02":{"id":"h02","name":"Basic Infantry","meleeAttack":2,"missileAttack":2,"meleeDefense":1,"missileDefense":1,"maxCohesion":50,"cohesion":50,"speed":8,"bulk":2,"buildCost":{"iron":4,"wood":1},"upkeepCost":{"iron":2,"food":1}},"h03":{"id":"h03","name":"Archers","meleeAttack":1,"missileAttack":1,"meleeDefense":3,"missileDefense":1,"maxCohesion":50,"cohesion":50,"speed":8,"bulk":2,"buildCost":{"wood":4,"leather":2},"upkeepCost":{"wood":2,"leather":1,"food":1}},"h04":{"id":"h04","name":"Archers","meleeAttack":1,"missileAttack":1,"meleeDefense":3,"missileDefense":1,"maxCohesion":50,"cohesion":50,"speed":8,"bulk":2,"buildCost":{"wood":4,"leather":2},"upkeepCost":{"wood":2,"leather":1,"food":1}}},"owner":"other","disorder":0,"burden":8,"burdenThreshold":8,"burdenModifier":1,"numUnits":4,"trueSpeed":0,"maxSpeed":8,"avgSpeed":4.291666666666667,"generalOrders":{"engagement":"ignore"},"waypoints":[{"x":10,"y":7}]}}
+{
+    "field01": {
+        "id": "field01",
+        "name": "Cavalry Force",
+        "xPos": 8,
+        "yPos": 6,
+        "unitList": {
+            "a01": {
+                "id": "a01",
+                "name": "Cavalry",
+                "meleeAttack": 3,
+                "missileAttack": 1,
+                "meleeDefense": 1,
+                "missileDefense": 1,
+                "maxCohesion": 50,
+                "cohesion": 50,
+                "speed": 16,
+                "bulk": 2,
+                "buildCost": {
+                    "iron": 2,
+                    "leather": 2,
+                    "horses": 2
+                },
+                "upkeepCost": {
+                    "iron": 1,
+                    "leather": 1,
+                    "horses": 1,
+                    "food": 2
+                }
+            },
+            "a02": {
+                "id": "a02",
+                "name": "Cavalry",
+                "meleeAttack": 3,
+                "missileAttack": 1,
+                "meleeDefense": 1,
+                "missileDefense": 1,
+                "maxCohesion": 50,
+                "cohesion": 50,
+                "speed": 16,
+                "bulk": 2,
+                "buildCost": {
+                    "iron": 2,
+                    "leather": 2,
+                    "horses": 2
+                },
+                "upkeepCost": {
+                    "iron": 1,
+                    "leather": 1,
+                    "horses": 1,
+                    "food": 2
+                }
+            },
+            "a03": {
+                "id": "a03",
+                "name": "Cavalry",
+                "meleeAttack": 3,
+                "missileAttack": 1,
+                "meleeDefense": 1,
+                "missileDefense": 1,
+                "maxCohesion": 50,
+                "cohesion": 50,
+                "speed": 16,
+                "bulk": 2,
+                "buildCost": {
+                    "iron": 2,
+                    "leather": 2,
+                    "horses": 2
+                },
+                "upkeepCost": {
+                    "iron": 1,
+                    "leather": 1,
+                    "horses": 1,
+                    "food": 2
+                }
+            },
+            "a04": {
+                "id": "a04",
+                "name": "Cavalry",
+                "meleeAttack": 3,
+                "missileAttack": 1,
+                "meleeDefense": 1,
+                "missileDefense": 1,
+                "maxCohesion": 50,
+                "cohesion": 50,
+                "speed": 16,
+                "bulk": 2,
+                "buildCost": {
+                    "iron": 2,
+                    "leather": 2,
+                    "horses": 2
+                },
+                "upkeepCost": {
+                    "iron": 1,
+                    "leather": 1,
+                    "horses": 1,
+                    "food": 2
+                }
+            }
+        },
+        "owner": "mjm",
+        "disorder": 0,
+        "burden": 8,
+        "burdenThreshold": 8,
+        "burdenModifier": 1,
+        "numUnits": 4,
+        "trueSpeed": 0,
+        "maxSpeed": 16,
+        "avgSpeed": 7.625,
+        "generalOrders": {
+            "engagement": "ignore"
+        },
+        "waypoints": [
+            {
+                "x": 8,
+                "y": 6
+            }
+        ]
+    },
+    "field02": {
+        "id": "field02",
+        "name": "Expeditionary Force",
+        "xPos": 9,
+        "yPos": 9,
+        "unitList": {
+            "b01": {
+                "id": "b01",
+                "name": "Basic Infantry",
+                "meleeAttack": 2,
+                "missileAttack": 2,
+                "meleeDefense": 1,
+                "missileDefense": 1,
+                "maxCohesion": 50,
+                "cohesion": 50,
+                "speed": 8,
+                "bulk": 2,
+                "buildCost": {
+                    "iron": 4,
+                    "wood": 1
+                },
+                "upkeepCost": {
+                    "iron": 2,
+                    "food": 1
+                }
+            },
+            "b02": {
+                "id": "b02",
+                "name": "Basic Infantry",
+                "meleeAttack": 2,
+                "missileAttack": 2,
+                "meleeDefense": 1,
+                "missileDefense": 1,
+                "maxCohesion": 50,
+                "cohesion": 50,
+                "speed": 8,
+                "bulk": 2,
+                "buildCost": {
+                    "iron": 4,
+                    "wood": 1
+                },
+                "upkeepCost": {
+                    "iron": 2,
+                    "food": 1
+                }
+            },
+            "b03": {
+                "id": "b03",
+                "name": "Archers",
+                "meleeAttack": 1,
+                "missileAttack": 1,
+                "meleeDefense": 3,
+                "missileDefense": 1,
+                "maxCohesion": 50,
+                "cohesion": 50,
+                "speed": 8,
+                "bulk": 2,
+                "buildCost": {
+                    "wood": 4,
+                    "leather": 2
+                },
+                "upkeepCost": {
+                    "wood": 2,
+                    "leather": 1,
+                    "food": 1
+                }
+            },
+            "b04": {
+                "id": "b04",
+                "name": "Archers",
+                "meleeAttack": 1,
+                "missileAttack": 1,
+                "meleeDefense": 3,
+                "missileDefense": 1,
+                "maxCohesion": 50,
+                "cohesion": 50,
+                "speed": 8,
+                "bulk": 2,
+                "buildCost": {
+                    "wood": 4,
+                    "leather": 2
+                },
+                "upkeepCost": {
+                    "wood": 2,
+                    "leather": 1,
+                    "food": 1
+                }
+            },
+            "b05": {
+                "id": "b05",
+                "name": "Cavalry",
+                "meleeAttack": 3,
+                "missileAttack": 1,
+                "meleeDefense": 1,
+                "missileDefense": 1,
+                "maxCohesion": 50,
+                "cohesion": 50,
+                "speed": 16,
+                "bulk": 2,
+                "buildCost": {
+                    "iron": 2,
+                    "leather": 2,
+                    "horses": 2
+                },
+                "upkeepCost": {
+                    "iron": 1,
+                    "leather": 1,
+                    "horses": 1,
+                    "food": 2
+                }
+            }
+        },
+        "owner": "mjm",
+        "disorder": 0,
+        "burden": 10,
+        "burdenThreshold": 16,
+        "burdenModifier": 2,
+        "numUnits": 5,
+        "trueSpeed": 0,
+        "maxSpeed": 8,
+        "avgSpeed": 4.858333333333333,
+        "generalOrders": {
+            "engagement": "ignore"
+        },
+        "waypoints": [
+            {
+                "x": 9,
+                "y": 9
+            }
+        ]
+    },
+    "hostile01": {
+        "id": "hostile01",
+        "name": "Cavalry Force",
+        "xPos": 10,
+        "yPos": 7,
+        "unitList": {
+            "h01": {
+                "id": "h01",
+                "name": "Basic Infantry",
+                "meleeAttack": 2,
+                "missileAttack": 2,
+                "meleeDefense": 1,
+                "missileDefense": 1,
+                "maxCohesion": 50,
+                "cohesion": 50,
+                "speed": 8,
+                "bulk": 2,
+                "buildCost": {
+                    "iron": 4,
+                    "wood": 1
+                },
+                "upkeepCost": {
+                    "iron": 2,
+                    "food": 1
+                }
+            },
+            "h02": {
+                "id": "h02",
+                "name": "Basic Infantry",
+                "meleeAttack": 2,
+                "missileAttack": 2,
+                "meleeDefense": 1,
+                "missileDefense": 1,
+                "maxCohesion": 50,
+                "cohesion": 50,
+                "speed": 8,
+                "bulk": 2,
+                "buildCost": {
+                    "iron": 4,
+                    "wood": 1
+                },
+                "upkeepCost": {
+                    "iron": 2,
+                    "food": 1
+                }
+            },
+            "h03": {
+                "id": "h03",
+                "name": "Archers",
+                "meleeAttack": 1,
+                "missileAttack": 1,
+                "meleeDefense": 3,
+                "missileDefense": 1,
+                "maxCohesion": 50,
+                "cohesion": 50,
+                "speed": 8,
+                "bulk": 2,
+                "buildCost": {
+                    "wood": 4,
+                    "leather": 2
+                },
+                "upkeepCost": {
+                    "wood": 2,
+                    "leather": 1,
+                    "food": 1
+                }
+            },
+            "h04": {
+                "id": "h04",
+                "name": "Archers",
+                "meleeAttack": 1,
+                "missileAttack": 1,
+                "meleeDefense": 3,
+                "missileDefense": 1,
+                "maxCohesion": 50,
+                "cohesion": 50,
+                "speed": 8,
+                "bulk": 2,
+                "buildCost": {
+                    "wood": 4,
+                    "leather": 2
+                },
+                "upkeepCost": {
+                    "wood": 2,
+                    "leather": 1,
+                    "food": 1
+                }
+            }
+        },
+        "owner": "other",
+        "disorder": 0,
+        "burden": 8,
+        "burdenThreshold": 8,
+        "burdenModifier": 1,
+        "numUnits": 4,
+        "trueSpeed": 0,
+        "maxSpeed": 8,
+        "avgSpeed": 4.291666666666667,
+        "generalOrders": {
+            "engagement": "ignore"
+        },
+        "waypoints": [
+            {
+                "x": 10,
+                "y": 7
+            }
+        ]
+    }
+}
