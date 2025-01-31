@@ -2,6 +2,7 @@ const { Router } = require('express');
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const pool = require("../dbConfig.js");
+const authenticate = require('../middleware/authenticate.js');
 
 // Validation
 const validate = require("../middleware/validate.js")
@@ -82,7 +83,6 @@ authRouter.post('/login', loginSchema, validate, async (req, res) => {
 
         // Check that the password is correct
         const isValid = await bcrypt.compare( password, user.rows[0].user_password);
-console.log(isValid);
 
         if (!isValid) {
             return res.status(401).json({error: "Login or Password is incorrect"});
@@ -97,7 +97,7 @@ console.log(isValid);
     }
 });
 
-authRouter.get("/verify", async (req, res) => {
+authRouter.get("/verify", authenticate, async (req, res) => {
     try {
         res.json(true);
     } catch (error) {
