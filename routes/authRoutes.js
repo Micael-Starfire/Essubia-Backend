@@ -45,7 +45,7 @@ authRouter.post("/register", registerSchema, validate, async (req, res) => {
         }
 
         // Hash the password
-        const salt = await bcrypt.genSalt(16);
+        const salt = await bcrypt.genSalt(8);
         const hashPass = await bcrypt.hash(password, salt);
 
         // Enter new user into database
