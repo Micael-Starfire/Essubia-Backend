@@ -2,8 +2,11 @@ const { Router } = require('express');
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const pool = require("../dbConfig.js");
+
+// Validation
 const validate = require("../middleware/validate.js")
 const registerSchema = require("../schemas/register-schema.js");
+const loginSchema = require("../schemas/login-schema.js");
 
 const authRouter = Router();
 
@@ -62,12 +65,12 @@ authRouter.post("/register", registerSchema, validate, async (req, res) => {
     }
 });
 
-authRouter.post('/login', async (req, res) => {
+authRouter.post('/login', loginSchema, validate, async (req, res) => {
     try {
         const {login, password} = req.body;
 
         const user = await pool.query(`
-            SELECT # FROM users
+            SELECT * FROM users
             WHERE user_name=$1 OR user_email=$1`,
             [login]
         );
@@ -78,7 +81,8 @@ authRouter.post('/login', async (req, res) => {
         }
 
         // Check that the password is correct
-        const isValid = bcrypt.compare( password, user.rows[0].user_password);
+        const isValid = await bcrypt.compare( password, user.rows[0].user_password);
+console.log(isValid);
 
         if (!isValid) {
             return res.status(401).json({error: "Login or Password is incorrect"});
