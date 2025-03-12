@@ -18,7 +18,7 @@ const jwtGenerate = (userId) => {
         }
     };
 
-    return jwt.sign(payload, process.env.JWT_SECRET, {expiresIn: 7*24*60*60});
+    return jwt.sign(payload, process.env.JWT_SECRET, {expiresIn: 15*60});
 }
 
 authRouter.post("/register", registerSchema, validate, async (req, res) => {
@@ -90,7 +90,7 @@ authRouter.post('/login', loginSchema, validate, async (req, res) => {
 
         // Generate and return the JWT Token
         const jwtToken = jwtGenerate(user.rows[0].user_id);
-        res.json(jwtToken);
+        res.json({jwtToken});
     } catch (error) {
         console.error(error);
         res.status(500).json({error: "Server Error"});
